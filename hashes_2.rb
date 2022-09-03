@@ -8,10 +8,10 @@ states = {
 }
 
 # Use the each method to iterate through it and print out a sentence stating each state name and abbreviation
-#
-#
-#
 
+states.each do |state_name, abbreviation|
+  puts "Here are the states and abbreviations: #{state_name}, #{abbreviation}"
+end
 
 # ======================================
 # 2- Using the following Hash
