@@ -50,9 +50,10 @@ email_contents = {
   "closing" => "Please let me know,",
   "signature" => "Aly Kessner, aly@gmail.com, 123-456-7890"
 }
-p email_contents
 
 # Write code that prints your email hash to the terminal.
+
+p email_contents
 
 puts "From: #{email_contents["sender"]}
 Subject: #{email_contents["subject_title"]}
@@ -136,12 +137,14 @@ email_hashes = [
   signature: "Amy"
 }
 ]
+
 puts email_hashes
 
-
-# puts "From: #{email_hashes[:sender]}
-# Subject: #{email_hashes[:subject_title]}
-# Hey Anhnhi,
-# #{email_hashes[:body]}
-# #{email_hashes[:closing]}
-# #{email_hashes[:signature]}"
+email_hashes.each do |email|
+  puts "From: #{email[:sender]}
+  Subject: #{email[:subject_title]}
+  Hey Anhnhi,
+  #{email[:body]}
+  #{email[:closing]}
+  #{email[:signature]}"
+end
